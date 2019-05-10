@@ -1,0 +1,5 @@
+Here we have the python and sql code for the creation of the UTC Algorithm and testing it.
+- The LSTM_Prediciton_Build.py file contains the function for creating the prediciton for each meter
+- The Anomaly_Detection_Single_day.py file contains the function for testing the prediction against actual values to detect potential anomalies
+- test.py is an example of how to implement both functions
+- IEE_meter_data.sql is the sql query for retrieving the IEE data from the database
