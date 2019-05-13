@@ -17,8 +17,9 @@ lstm_prediction_build('Huntsville_0099','Huntsville_0099_last_reading.csv')
 ## The following is how one can run the anomaly_detection function over each meter based on the output of the prediction above
 directory = 'Huntsville_0099\Prediction'
 location = 'Huntsville_0099'
-meter_test = ['0099070']
-for file in meter_test:
+#meter_test = ['0099070']
+
+for file in os.listdir(directory):
     anomaly_detection_single_day(location, file, start = '2017-02-01 00:00:00',
                                  end= '2017-2-04 23:59:59')
 
